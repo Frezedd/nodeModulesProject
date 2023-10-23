@@ -6,9 +6,15 @@
     return module();
 })();
 
-function sum(a, b) {
-    let c;
-    c = a + b;
-    console.log(c);
+
+function myMultiplier(num) {
+    return num * 2;
 }
-console.log(sum(9, 10));
+console.log(myMultiplier(2));
+
+
+  
+module.exports.myMultiplier=myMultiplier
+console.log(module.exports);
+
+
